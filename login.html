@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
     <!-- nav bar -->
     <nav class="navbar navbar-expand-lg bg-warning fixed-top">
         <div class="container-fluid">
-            <img src="/images/ee8758552972ad0bd401f182dacb6a44.jpg" alt="logo" height="80px" width="80">
+            <img src="./images/ee8758552972ad0bd401f182dacb6a44.jpg" alt="logo" height="80px" width="80">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,18 +28,22 @@
         </div>
       </nav>
       <!-- login page -->
-    <div class="slide text-center py-5">
-        <form action="">
-          <h1 class="fw-bold text-primary">Let Explore Kerala!!</h1>
-          <h2>Login</h2>
-          <label for="Username">Username</label><br>
-          <input type="text" placeholder="username" name="" id=""><br><br>
-          <label for="password">password</label><br>
-          <input type="password" placeholder="password" id=""><br><br>
-          <a href="signup.html">SignUpforKeralaTourism</a><br><br>
-          <button id="log">Login</button><br>
-         </form>
-         </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+     <section class="slide">
+      <form onsubmit="return validate()">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email"    aria-describedby="emailHelp">
+          <span class="err1"></span>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="Password">
+          <span class="err2"></span>
+        </div>
+        <button type="submit text-center" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+         <script src="script.js"></script>
+        </body>
 </html>
