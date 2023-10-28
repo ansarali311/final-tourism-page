@@ -4,11 +4,7 @@
     height: 720px;
 }
 form{
-    padding-left: 500px;
-    padding-top: 300px;
-    width: 800px;
-    color: rgb(31, 201, 99);
-    
+    margin-top: 80px;
 }
 .container{
     height: 300px;
